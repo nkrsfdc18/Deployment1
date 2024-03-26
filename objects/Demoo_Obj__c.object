@@ -144,69 +144,29 @@
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>false</enableActivities>
-    <enableBulkApi>false</enableBulkApi>
+    <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>false</enableReports>
-    <enableSearch>true</enableSearch>
-    <enableSharing>false</enableSharing>
-    <enableStreamingApi>false</enableStreamingApi>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
-        <fullName>Policy_Type__c</fullName>
+        <fullName>Description__c</fullName>
         <externalId>false</externalId>
-        <label>Policy Type</label>
+        <label>Description</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>Life</fullName>
-                    <default>false</default>
-                    <label>Life</label>
-                </value>
-                <value>
-                    <fullName>Motor</fullName>
-                    <default>false</default>
-                    <label>Motor</label>
-                </value>
-                <value>
-                    <fullName>Health</fullName>
-                    <default>false</default>
-                    <label>Health</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
+        <type>TextArea</type>
     </fields>
-    <fields>
-        <fullName>Premium__c</fullName>
-        <externalId>false</externalId>
-        <label>Premium</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>2</scale>
-        <trackTrending>false</trackTrending>
-        <type>Currency</type>
-    </fields>
-    <fields>
-        <fullName>Customer_name__c</fullName>
-        <externalId>false</externalId>
-        <label>Customer name</label>
-        <length>255</length>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <label>Insurance</label>
+    <label>Demoo Obj</label>
     <nameField>
-        <label>Insurance Name</label>
+        <label>Demoo Obj Name</label>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Insurances</pluralLabel>
+    <pluralLabel>Demoo Objs</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
