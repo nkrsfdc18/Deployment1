@@ -143,64 +143,33 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <enableActivities>false</enableActivities>
+    <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
-    <enableReports>false</enableReports>
+    <enableReports>true</enableReports>
     <enableSearch>false</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <label>Demo Obj</label>
+    <label>Student</label>
     <nameField>
-        <label>Demo Obj Name</label>
+        <label>Student Name</label>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Demo Objs</pluralLabel>
+    <pluralLabel>Students</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <fields>
-        <fullName>Email__c</fullName>
+        <fullName>StudentId__c</fullName>
+        <displayFormat>STID-{0000}</displayFormat>
         <externalId>false</externalId>
-        <label>Email</label>
-        <required>false</required>
+        <label>StudentId</label>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Email</type>
-        <unique>false</unique>
+        <type>AutoNumber</type>
     </fields>
-    <fields>
-        <fullName>Phone__c</fullName>
-        <externalId>false</externalId>
-        <label>Phone</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Phone</type>
-    </fields>
-    <fields>
-        <fullName>First_Name__c</fullName>
-        <externalId>false</externalId>
-        <label>First Name</label>
-        <length>255</length>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Date_of_Birth__c</fullName>
-        <externalId>false</externalId>
-        <label>Date of Birth</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Date</type>
-    </fields>
-    <validationRules>
-        <fullName>Phone_Not_null</fullName>
-        <active>true</active>
-        <errorConditionFormula>ISBLANK(Phone__c)</errorConditionFormula>
-        <errorMessage>Please Check Phone Field</errorMessage>
-    </validationRules>
 </CustomObject>
