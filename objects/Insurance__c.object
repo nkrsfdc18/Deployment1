@@ -153,15 +153,7 @@
     <enableSharing>false</enableSharing>
     <enableStreamingApi>false</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <label>Insurance</label>
-    <nameField>
-        <label>Insurance Name</label>
-        <type>Text</type>
-    </nameField>
-    <pluralLabel>Insurances</pluralLabel>
-    <searchLayouts/>
-    <sharingModel>ReadWrite</sharingModel>
-    <visibility>Public</visibility>
+
     <fields>
         <fullName>Policy_Type__c</fullName>
         <externalId>false</externalId>
@@ -210,4 +202,5 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+
 </CustomObject>
