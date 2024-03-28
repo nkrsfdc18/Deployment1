@@ -1,8 +1,4 @@
- /**********
- *Author:Naveen
- *Date:27th march 2024.
- *Object:Account.
-  */
+
 
 trigger Account_Trigger on Account (before insert,Before update,Before Delete,After Insert,After Update,After Delete,After Undelete) {
     if(Trigger.isBefore){
