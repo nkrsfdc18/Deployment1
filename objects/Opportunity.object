@@ -11,4 +11,13 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <validationRules>
+        <fullName>New_Record_Close_Date_is_Today</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ISNEW() ,
+  CloseDate  =  TODAY() 
+)</errorConditionFormula>
+        <errorMessage>You can not  Select Close date today for New Records</errorMessage>
+    </validationRules>
 </CustomObject>

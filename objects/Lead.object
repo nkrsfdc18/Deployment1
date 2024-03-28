@@ -43,4 +43,22 @@ CASE(Lead_Score__c,
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <validationRules>
+        <fullName>Lead_Source_Emai_Blank</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+ ISPICKVAL( LeadSource , &apos;Web&apos;),
+ ISBLANK(Email)  
+)</errorConditionFormula>
+        <errorMessage>Email can not be blank WhenLead Source is Web</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Lead_Source_Phone_Blank</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND (
+ ISPICKVAL( LeadSource , &apos;Phone Inquiry&apos;),
+ ISBLANK(Phone)  
+)</errorConditionFormula>
+        <errorMessage>Phone can not be blank while Lead Source is Phone Inquiry</errorMessage>
+    </validationRules>
 </CustomObject>
