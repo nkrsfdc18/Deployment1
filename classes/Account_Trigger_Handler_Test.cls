@@ -2,8 +2,10 @@
 public class Account_Trigger_Handler_Test {
 //This is Test Class for Account
 //This Modification done on GitHub.
+//This Modificationn Done on Local System.
     @isTest
     Public static void RatingUpdateTest(){
+        
         list<Account>acctList=New List<Account>();
         for(integer i=1;i<5;i++){
             Account ac=New Account();
