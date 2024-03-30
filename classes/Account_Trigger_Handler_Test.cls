@@ -36,6 +36,22 @@ public class Account_Trigger_Handler_Test {
         List<Account>updateAcct=[select id,CopyBillingToShipping__c,ShippingCity from account where id =:acctList[0].id];
         System.AssertEquals('Kadapa',updateAcct[0].ShippingCity);
     }
-    
+    @isTest
+    Public Static void AcctCreationWithRelatedCntTest(){
+        
+         list<Account>acctList=New List<Account>();
+        for(integer i=1;i<5;i++){
+            Account ac=New Account();
+            ac.Name='Test'+i;
+            ac.Industry='Media';
+            acctList.add(ac);
+        }
+        test.startTest();
+        Insert acctList;
+        test.Stoptest();
+        
+        List<contact>cntlist=[select id,LastName from contact where Accountid =:acctList[0].id];
+        System.Assert(cntlist!=null,'Contact Not Created');
+    }
     
 }
