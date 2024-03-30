@@ -1,6 +1,6 @@
 @istest
 public class Account_Trigger_Handler_Test {
-
+//This is Test Class for Account
     @isTest
     Public static void RatingUpdateTest(){
         list<Account>acctList=New List<Account>();
